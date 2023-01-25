@@ -1,0 +1,139 @@
+webapp / webcontent 
+
+	website   - browser -->
+					html
+					css 
+					js 
+					image
+					audio/video
+					
+server --> 
+	user -> request --> process --> SERVLET 
+	
+	
+	
+MVC 
+model --> data 
+view  --> input / output [ Login.html / Home.html ] 
+controller --> logic 
+
+Login.html -> email , password -> submit -> server -> process --> response 
+
+
+src ->	com 
+			controller  -- logic 
+			dao 
+java -> com
+
+
+----------------
+servlet -> adv java --> server -->controller 
+
+	Servlet 
+
+1) class extends HttpServlet
+2) service(request,response)
+3) server -> web.xml 
+
+
+class A implmenets Runnable{
+	public void run(){
+	
+	}
+}
+
+class A extends Thread{
+	public void run(){
+	
+	}
+}
+
+how to get HttpServlet class ? 
+	HttpServlet class is available in servlet-api.jar 
+
+how to get servlet-api.jar ?
+	we can search in apache tomcat / lib 
+			and link that jar file into your project 
+	
+how to link jar file from tomca/lib?
+project -> root-> right click -> properties -> java build path ->
+			click on libraries[module] tab -> click on add external jar -> browse tomcat/lib 
+				-> select servlet-api.jar 
+				-> click on order and export tab=> select all -> apply and close .
+				
+				
+--------------------------------------------				
+				
+_HttpServlet_ is the parent class of servlet? 
+ 				
+which method we need to override? --service() 
+
+_HttpServletRequest__ and _HttpSerlvetResponse__ are the argument of servic()?
+
+
+web.xml 
+	1)	<servlet> name class 
+	2)  <servlet-mapping> name urlpattern 
+
+
+form action => servlet url pattern 
+
+HttpServlet --> tomcat/lib/servlet-api.jar 
+
+MVC --> model view controller 
+
+model :: data 
+view  :: input/output html jsp 
+controller :: logic/Servlet 
+
+--------------------------------------------				
+				  
+			
+		interface 		Servlet 
+		abstract class 	GenericServlet 
+		class			HttpServlet
+		
+		class A extends HttpServlet{
+		
+			//use 
+			//override 
+			service() -- logic 
+		} 
+
+--------------------------------------------	
+
+form method --> get 
+	method="get" 
+	methpd="post" 		
+
+
+take two numbers from user and print additio of two numbers on next page 
+
+20
+30
+
+
+20 + 30 = 50
+--------------------------------------------	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
