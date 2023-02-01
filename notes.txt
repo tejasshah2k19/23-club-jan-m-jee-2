@@ -120,11 +120,43 @@ take two numbers from user and print additio of two numbers on next page
 
 
 
+JSP -> java server pages / java servlet page 
 
 
+html page -> can not write java
+ 
 
+html + java 
+ 
+ 
 
-
+scriptlet :- 
+	<%  %> 
+	write java logic 
+	<%
+		int a; 
+	%>
+	
+expression :- 
+	<%=  %> 
+	
+	<%=a %> 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 
 
