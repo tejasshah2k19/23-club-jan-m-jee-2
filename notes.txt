@@ -144,6 +144,62 @@ expression :-
 	
 	
 	
+-------------------
+
+email 
+
+name 
+
+userId 
+
+creditCard 
+cvv 
+otp 
+
+1) cookie  -- forntend -- browser -- client 
+2) session --backend -- server --- memory 
+
+Cookie c = new Cookiee("pincode","380015");
+response.addCookie(c);
+setMaxAge()
+1 year 
+
+
+
+Welcome Ram, 
+
+otp
+cc
+cvv
+
+we can not session 
+when ? when user hits first request --> 
+500 -> server --> 500 sessions ,1 application 
+
+500 -> server --> no session 
+
+HttpSession session = request.getSession();
+session.setMaxInactiveInterval(1000*60*5);
+session.setAttribute("firstName","ram");
+
+String name = (String) session.getAttribute("firstName");
+
+session.invalidate();
+
+page vs request vs session vs application 
+
+name -> all pages [ session ]
+erroMsg -> servlet jsp [ request ]
+
+//a -> payment -> accept => paymentGateway =>  
+
+//upi 
+
+
+
+
+
+
 	
 	
 	

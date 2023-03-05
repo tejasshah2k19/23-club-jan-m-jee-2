@@ -7,15 +7,13 @@
 <title>Registration</title>
 </head>
 <body>
-
+	
 	<form action="RegistrationServlet" method="post">
 
-		FirstName: <input type="text" name="firstName" /><br>
-		<br> Email : <input type="text" name="email" /><br>
-		<br> Password : <input type="text" name="password" /><br>
-		<br>
-		
-		<input type="submit" value="Signup">
+		FirstName: <input type="text" name="firstName" /><br> <br>
+		Email : <input type="text" name="email" /><br> <br>
+		Password : <input type="text" name="password" /><br> <br> <input
+			type="submit" value="Signup">
 
 
 	</form>
