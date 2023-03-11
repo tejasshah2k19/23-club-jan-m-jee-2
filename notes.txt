@@ -195,6 +195,79 @@ erroMsg -> servlet jsp [ request ]
 
 //upi 
 
+-------------
+
+listener 
+
+
+listen --> event --> 
+
+
+application but click -> event 
+
+jee website -> events 
+
+
+server -->start --> amazon rds --> on 
+server ->stop --> amazon rds --> off 
+
+
+
+session --> create   -> login -> userCounter ->
+session --> destroy  -> logout 
+
+
+1) class - implements - Listener 
+2) override - logic 
+3) web.xml 
+-----------------
+
+500 request ->	1) load class 2)create instance  3)init 4)service 5)destroy 
+
+				
+
+servlet 
+	init(1) 
+	service(n)  --doGet* doPost* doDelete doHead 
+	destroy(1) 
+
+filter 
+
+
+A	X	submit		server filter	-> servlet [validation] --> response error | success 
+B   XX 
+C   C
+D	C 
+
+
+1  class -> Filter I 
+2  override --> init doFilter destroy   
+3  web.xml 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
