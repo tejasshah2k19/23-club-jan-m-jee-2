@@ -240,7 +240,7 @@ C   C
 D	C 
 
 
-1  class -> Filter I 
+1  class -> Filter Interface   
 2  override --> init doFilter destroy   
 3  web.xml 
 
