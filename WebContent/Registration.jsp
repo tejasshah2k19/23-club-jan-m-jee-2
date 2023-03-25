@@ -7,7 +7,19 @@
 <title>Registration</title>
 </head>
 <body>
+	<%!
+		public void jspInit(){
+		
+		}
+	%>
+	<%!
+		int x =90; //instance 
+	%>
+	<%
+		int x=10;//service 
+	%>
 	
+	<%=x %>
 	<form action="RegistrationServlet" method="post">
 
 		FirstName: <input type="text" name="firstName" /><br> <br>

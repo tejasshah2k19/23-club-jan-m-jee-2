@@ -7,7 +7,7 @@
 <title>Filter | Login </title>
 </head>
 <body>
-
+ 
 <form action="FilterLoginServlet">
 	Email :		<input type="text"     name="email"/>${emailError}<br><br>
 	Password :  <input type="password" name="password"  />${passwordError }<br><br>
@@ -15,6 +15,5 @@
 	<input type="submit" value="Login"/>
 
 </form>
-
 </body>
 </html>

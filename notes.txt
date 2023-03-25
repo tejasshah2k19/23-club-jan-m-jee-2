@@ -244,8 +244,172 @@ D	C
 2  override --> init doFilter destroy   
 3  web.xml 
 
+----------------------------------------------
+
+servlet life cycle 
+
+init() 1st request - 1 time 
+service() -- all request --n time 
+destroy()--server shutdown -- 1 time 
+ 
+1) load class -- 1  
+2) create instance  --- 1 
+3) init -- 1 
+4) service -- n 
+5) destroy -- 1 
+
  
 
+when we hit 1st request it load class and create instance 
+and then call init and then service.
+
+<servlet>
+	<servlet-name>
+	<servlet-class> 
+	
+	<load-on-startup>1</> -> this will load your servlet immediately when server starts 
+
+</servlet> 
+
+A 4 
+B 3 
+C 2 
+D 1 
+
+
+
+A 1 
+B 1 
+C 2 
+D 2 
+
+
+--------------------------------------------------------
+
+LoginServlet ---> authentication 
+
+
+JSP LifeCycle 
+
+java server pages 
+java servlet pages 
+
+
+JSP --> Servlet 
+
+.jsp -> 
+
+		1) translation .java  [ jsp content --> _jspService()  out.print()  ] 
+		2) compilation .class 
+		3) load class 
+		4) create instance 
+		5) jspInit()
+		6) _jspService()
+		7) jspDestroy()
+
+
+Demo.jsp 
+<html>
+	<head>
+		<title>Demo</title> 
+	</head>
+	
+	<body>
+			<%int j=10;%>
+			<%! int x=10;%>
+			<%=j%> 
+				Hi 
+	</body>
+	</html> 
+	
+	
+	
+	Demo_jsp.java
+	
+	class DemoJsp implements 
+	
+	int x=10;
+	
+	_jspService(){
+			out.print("<html>");
+				   	<head>
+					<title>Demo</title> 
+					</head>
+		
+					<body>
+				 	int j=10;
+					out.print(j); 
+					Hi 
+					</body>
+					</html> 
+	}
+	
+		
+	
+	}
+
+--------------------------------------------
+
+Header.jsp --> XXXX 
+
+Home.jsp 
+	DynamicInclusion
+	<jsp:include page="Header.jsp" /> 
+	
+	StaticInclusion
+	<%@ include file="Header.jsp %>
+	
+	
+	A.jsp [10kb]
+		1
+		2
+		B.jsp -> jsp:include 
+		print(a)
+	
+	C.jsp [10kb+5kb] 
+		1
+		2
+		B.jsp -> @include [2 line]
+		print(a) 
+		
+	B.jsp[5kb]
+		int a=10;
+		2
+		
+-------------------------------------------------------------
+<b> <i> 
+<a>
+<u>
+
+
+tag 
+customtag 
+
+jstl 
+	 
+	java standard tag library 
+
+1) core 
+2) sql
+3) fmt
+4) xml 
+5) function 
+
+
+
+<if test="">
+	---
+	---
+</if> 
+
+
+jstl 
+	download jstl.jar 
+	
+1) download jstl.jar 
+2) WEB-INF/lib
+3) classpath -> add jar and order and export 
+4) jsp use -> import 
 
 
 
@@ -253,6 +417,12 @@ D	C
 
 
 
+
+
+
+
+
+		
 
 
 

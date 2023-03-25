@@ -66,21 +66,39 @@
     <display-name>FilterLoginServlet</display-name>
     <servlet-name>FilterLoginServlet</servlet-name>
     <servlet-class>com.controller.FilterLoginServlet</servlet-class>
+    <init-param>
+      <param-name>email</param-name>
+      <param-value>royal@gmail.com</param-value>
+    </init-param>
+    <init-param>
+      <param-name>password</param-name>
+      <param-value>royal1234</param-value>
+    </init-param>
   </servlet>
   <servlet-mapping>
     <servlet-name>FilterLoginServlet</servlet-name>
     <url-pattern>/FilterLoginServlet</url-pattern>
   </servlet-mapping>
-
-
-	<filter>
-		<filter-name>LoginFilter</filter-name>
-		<filter-class>com.filter.LoginFilter</filter-class>
-	</filter>
-	<filter-mapping>
-		<filter-name>LoginFilter</filter-name>
-		<servlet-name>FilterLoginServlet</servlet-name>
-	</filter-mapping>
-
-
+  <filter>
+    <filter-name>LoginFilter</filter-name>
+    <filter-class>com.filter.LoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/FilterLoginServlet</url-pattern>
+  </filter-mapping>
+  <context-param>
+    <param-name>adminName</param-name>
+    <param-value>Admin</param-value>
+  </context-param>
+  <servlet>
+    <description></description>
+    <display-name>DataServlet</display-name>
+    <servlet-name>DataServlet</servlet-name>
+    <servlet-class>com.controller.DataServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DataServlet</servlet-name>
+    <url-pattern>/DataServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
