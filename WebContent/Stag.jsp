@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@taglib uri="www.royal.com/faculty/stag/tejas" prefix="s"%>
+<%@taglib uri="www.royal.com/faculty/ctag/tejas" prefix="c"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,6 +11,9 @@
 </head>
 <body>
 	<s:greet/>
-
+	<br>
+	<s:sqr num="5" />
+	<br>
+	<c:today/>
 </body>
 </html>

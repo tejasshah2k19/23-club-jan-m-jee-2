@@ -12,8 +12,9 @@ public class GreetTag extends SimpleTagSupport {
 	@Override
 	public void doTag() throws JspException, IOException {
 		Calendar c = Calendar.getInstance();
-		int h = c.get(Calendar.HOUR);
-
+		System.out.println(c);
+		int h = c.get(Calendar.HOUR_OF_DAY);
+		System.out.println(h);
 		JspWriter out = getJspContext().getOut();
 
 		if (h >= 0 && h <= 11) {

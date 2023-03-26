@@ -426,10 +426,29 @@ jsp-api.jar --> apachetomcat/lib
 3) web.xml --> .tld  
 4) jsp use --> import --> use 
 
-
+no body 
+no attribute 
 <greet></greet>
 <greet>sdfds</greet>
 <b>asds</b>
+
+
+no body
+with attribute 
+<sqr num="9"/> => 81 
+<sqr num="${num}"/> => 81 
+
+
+----------------------------------
+classic tag 
+
+<today></today>
+1) extends TagSupport [ implements Tag ]  
+	doStartTag 
+	doEndTag 
+2) tld  
+3) web.xml 
+4) jsp use 
 
 
 

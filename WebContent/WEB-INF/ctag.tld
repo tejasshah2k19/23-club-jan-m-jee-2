@@ -7,22 +7,13 @@
 
 	<jsp-version>2.0</jsp-version>
 	<tlib-version>1.0</tlib-version>
-	<uri>www.royal.com/faculty/stag/tejas</uri>
+	<uri>www.royal.com/faculty/ctag/tejas</uri>
 	<tag>
-		<name>greet</name>
-		<tag-class>com.stag.GreetTag</tag-class>
+		<name>today</name>
+		<tag-class>com.ctag.TodayTag</tag-class>
 		<body-content>empty</body-content>
 	</tag>
 	
-	<tag>
-		<name>sqr</name>
-		<tag-class>com.stag.SqrTag</tag-class>
-		<body-content>empty</body-content>
-		<attribute>
-			<name>num</name>
-			<required>true</required>
-			<rtexprvalue>true</rtexprvalue>
-		</attribute>
-	</tag>
+	 
 	
 </taglib>
