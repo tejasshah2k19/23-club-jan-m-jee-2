@@ -412,7 +412,24 @@ jstl
 4) jsp use -> import 
 
 
+------------------------
+jsp-api.jar --> apachetomcat/lib 
 
+			1				2
+			SimpleTag		ClassicTag
+
+
+	<greet></greet>
+ 
+1) tag handler class -- logic -- implements SimpleTag , extends SimpleTagSupport  
+2) tag -> name , attribute , body , --- .tld
+3) web.xml --> .tld  
+4) jsp use --> import --> use 
+
+
+<greet></greet>
+<greet>sdfds</greet>
+<b>asds</b>
 
 
 
