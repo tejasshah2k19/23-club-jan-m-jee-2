@@ -451,11 +451,15 @@ classic tag
 4) jsp use 
 
 
+<currency src="inr" dest="usd" amount="10000"/>
+<currency src="usd" dest="inr" amount="10000"/>
+<currency src="inr" dest="inr" amount="10000"/> 
 
 
 
-
-
+print tag 
+	<print count="3">Royal</print> 
+	
 
 
 		

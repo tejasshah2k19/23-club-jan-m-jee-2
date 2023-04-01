@@ -19,11 +19,11 @@ public class TodayTag extends TagSupport{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return SKIP_BODY;
+		return SKIP_BODY; // EVAL_BODY 
 	}
 	
 	@Override
 	public int doEndTag() throws JspException {
-		return EVAL_PAGE;
+		return EVAL_PAGE; // SKIP_PAGE 
 	}
 }

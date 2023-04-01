@@ -13,7 +13,32 @@
 		<tag-class>com.ctag.TodayTag</tag-class>
 		<body-content>empty</body-content>
 	</tag>
-	
-	 
-	
+
+	<tag>
+		<name>print</name>
+		<tag-class>com.ctag.PrintTag</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<name>count</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>mark</name>
+		<tag-class>com.ctag.MarkTag</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<name>character</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>color</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		
+	</tag>
 </taglib>

@@ -15,5 +15,11 @@
 	<s:sqr num="5" />
 	<br>
 	<c:today/>
+	<br>
+	<c:print count="3">Royal</c:print>
+	<br>
+	<c:mark character="a" color="red">RoyalEducation</c:mark>
+	
+	
 </body>
 </html>
